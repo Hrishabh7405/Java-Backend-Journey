@@ -1,14 +1,16 @@
 public class Main {
     public static void main(String[] args) {
         
-        int age = 25;
-        double marks = 92.5;
-        boolean isPassed = true;
-        String name = "Alex";
+        int marks = 40;
 
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-        System.out.println("Marks: " + marks);
-        System.out.println("Passed: " + isPassed);
+        if (marks >= 90) {
+            System.out.println("Grade: A");
+        } else if (marks >= 75) {
+            System.out.println("Grade: B");
+        } else if (marks >= 60) {
+            System.out.println("Grade: C");
+        } else {
+            System.out.println("Grade: Fail");
+        }
     }
 }
