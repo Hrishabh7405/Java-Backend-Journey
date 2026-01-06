@@ -12,4 +12,13 @@ public class StudentManager {
             System.out.println("ID: " + s.id + ", Name: " + s.name + ", Marks: " + s.marks);
         }
     }
+
+    public Student findStudentById(int id) {
+        for (Student s : students) {
+            if (s.id == id) {
+                return s;
+            }
+        }
+        return null;
+    }
 }

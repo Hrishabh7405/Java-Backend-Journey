@@ -18,5 +18,12 @@ public class StudentApp {
 
         System.out.println("Students added successfully.");
         manager.displayAllStudents();
+        
+        Student found = manager.findStudentById(2);
+        if (found !=null) {
+            System.out.println("Found: " + found.name);
+        } else {
+            System.out.println("Student not found.");
+        }
     }
 }
