@@ -17,5 +17,6 @@ public class StudentApp {
         manager.addStudent(student2);
 
         System.out.println("Students added successfully.");
+        manager.displayAllStudents();
     }
 }

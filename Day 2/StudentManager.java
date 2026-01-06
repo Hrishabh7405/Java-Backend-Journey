@@ -6,4 +6,10 @@ public class StudentManager {
     public void addStudent(Student student) {
         students.add(student);
     }
+
+    public void displayAllStudents() {
+        for (Student s : students) {
+            System.out.println("ID: " + s.id + ", Name: " + s.name + ", Marks: " + s.marks);
+        }
+    }
 }
