@@ -21,4 +21,12 @@ public class StudentManager {
         }
         return null;
     }
+
+    public void isPassed() {
+        for (Student s : students) {
+            if (s.marks >= 60) {
+                System.out.println("PASSED -> " + s.name + "(" + s.marks + ")");
+            }
+        }
+    }
 }

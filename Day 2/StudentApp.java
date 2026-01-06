@@ -25,5 +25,7 @@ public class StudentApp {
         } else {
             System.out.println("Student not found.");
         }
+
+        manager.isPassed();
     }
 }
