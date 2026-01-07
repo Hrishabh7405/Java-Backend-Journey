@@ -8,9 +8,23 @@ public class StudentApp {
         StudentManager manager = new StudentManager();
 
         System.out.println("Welcome to the Student Management System");
-        System.out.print("Enter your name: ");
-        String input = scanner.nextLine();
-        System.out.println("Hello, " + input);
+        while (true) {
+
+            System.out.println("\n---MENU---");
+            System.out.println("1. Add Student");
+            System.out.println("2. View All Students");
+            System.out.println("3. Exit");
+
+            System.out.print("Choose an option: ");
+            int choice = scanner.nextInt();
+
+            if (choice == 3) {
+                System.out.println("Exiting Application...");
+                break;
+            }
+
+            System.out.println("Option Selected: " + choice);
+        }
         
         Student student1 = new Student();
         student1.id = 1;
