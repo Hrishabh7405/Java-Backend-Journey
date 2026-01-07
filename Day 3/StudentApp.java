@@ -38,7 +38,7 @@ public class StudentApp {
                 manager.addStudent(student);
                 System.out.println("Student added successfully.");
             } else if (choice == 2){
-                //view students
+                manager.displayAllStudents();
             } else if (choice == 3) {
                 System.out.println("Exiting Application...");
                 break;
