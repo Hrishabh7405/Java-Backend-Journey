@@ -18,12 +18,33 @@ public class StudentApp {
             System.out.print("Choose an option: ");
             int choice = scanner.nextInt();
 
-            if (choice == 3) {
+            if (choice ==1) {
+                System.out.print("Enter Student ID: ");
+                int id = scanner.nextInt();
+
+                scanner.nextLine();
+
+                System.out.print("Enter Student Name: ");
+                String name = scanner.nextLine();
+
+                System.out.print("Enter Student Marks: ");
+                int marks = scanner.nextInt();
+
+                Student student = new Student();
+                student.id = id;
+                student.name = name;
+                student.marks = marks;
+                
+                manager.addStudent(student);
+                System.out.println("Student added successfully.");
+            } else if (choice == 2){
+                //view students
+            } else if (choice == 3) {
                 System.out.println("Exiting Application...");
                 break;
+            } else {
+                System.out.println("Invalid option. Select a valid option.");
             }
-
-            System.out.println("Option Selected: " + choice);
         }
         
         Student student1 = new Student();
